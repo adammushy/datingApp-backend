@@ -68,3 +68,4 @@ tzdata==2023.3
 zope.interface==6.1
 dj-database-url==2.1.0
 gunicorn==21.2.0
+matplotlib==3.7.1
