@@ -47,19 +47,13 @@ inflection==0.5.1
 jax==0.4.12
 joblib==1.2.0
 keras==2.12.0
-# Kivy==2.1.0
-# kivy-deps.angle==0.3.3
-# kivy-deps.glew==0.3.1
-# kivy-deps.sdl2==0.4.5
-# Kivy-Garden==0.1.5
-# kivymd==1.1.1
 kiwisolver==1.4.4
 libclang==16.0.0
 Markdown==3.4.3
 MarkupSafe==2.1.3
 matplotlib==3.7.1
 ml-dtypes==0.2.0
-# MouseInfo==0.1.3
+
 msgpack==1.0.7
 numpy==1.23.5
 oauthlib==3.2.2
@@ -76,28 +70,26 @@ psycopg-binary==3.1.9
 psycopg2-binary==2.9.9
 pyasn1==0.5.1
 pyasn1-modules==0.3.0
-PyAudio==0.2.13
-# PyAutoGUI==0.9.53
+
 pycparser==2.21
 pyenchant==3.2.2
-# PyGetWindow==0.0.9
+
 Pygments==2.15.0
 pyinstaller==5.10.1
 pyinstaller-hooks-contrib==2023.2
 PyJWT==2.8.0
-# PyMsgBox==1.0.9
+
 pyOpenSSL==23.3.0
 pyparsing==3.0.9
 pyperclip==1.8.2
-# pypiwin32==223
+
 PyRect==0.2.0
 PyScreeze==0.1.28
 pyserial==3.5
 python-dateutil==2.8.2
 pytweening==1.0.4
-pytz==2023.3.post1
-# pywin32==
-# pywin32-ctypes==0.2.0
+
+
 PyYAML==6.0
 redis==5.0.1
 reedsolo==1.7.0
@@ -114,12 +106,11 @@ tensorboard==2.12.3
 tensorboard-data-server==0.7.0
 tensorflow==2.12.0
 tensorflow-estimator==2.12.0
-# tensorflow-intel==2.12.0
-# tensorflow-io-gcs-filesystem==0.31.0
+
 termcolor==2.3.0
 threadpoolctl==3.1.0
 Twisted==23.10.0
-# twisted-iocpsupport==1.0.4
+
 txaio==23.1.1
 typing_extensions==4.9.0
 tzdata==2023.3
