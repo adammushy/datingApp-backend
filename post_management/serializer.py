@@ -15,7 +15,7 @@ class ImageGetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Image
         fields = '__all__'
-        depth = 2
+        depth = 1
 
 
 class VideoPostSerializer(serializers.ModelSerializer):
@@ -23,6 +23,7 @@ class VideoPostSerializer(serializers.ModelSerializer):
         model = Video
         fields = [
             'account',
+            'thumbnail',
             'video',
         ]
 
@@ -31,4 +32,4 @@ class VideoGetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Video
         fields = '__all__'
-        depth = 2
+        depth = 1

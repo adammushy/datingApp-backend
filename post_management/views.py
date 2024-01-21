@@ -19,10 +19,17 @@ class ImageView(APIView):
     @staticmethod
     def get(request):
         accountId = request.GET.get("accountId")
+        print("id: "+accountId)
         try:
-            account = Account.objects.get(id=accountId)
-            posts = Image.objects.filter(id=account)
-            serializer = ImageGetSerializer(instance=posts)
+            # account = Account.objects.get(id=accountId)
+          
+            posts = Image.objects.filter(account_id=accountId)
+            # posts = Image.objects.all()
+            serializer = ImageGetSerializer(instance=posts, many=True)
+            print("images")
+            print(serializer.data)
+            
+                        
             return Response({"isAccountValid": True, "post": serializer.data})
         except Account.DoesNotExist:
             return Response({"isAccountValid": False})
@@ -59,9 +66,13 @@ class VideoView(APIView):
     def get(request):
         accountId = request.GET.get("accountId")
         try:
-            account = Account.objects.get(id=accountId)
-            posts = Video.objects.filter(id=account)
-            serializer = VideoGetSerializer(instance=posts)
+            # account = Account.objects.get(id=accountId)
+            posts = Video.objects.filter(account_id=accountId)
+            # posts = Video.objects.all()
+            serializer = VideoGetSerializer(instance=posts, many=True)
+            print("video")
+            print(serializer.data)
+            
             return Response({"isAccountValid": True, "post": serializer.data})
         except Account.DoesNotExist:
             return Response({"isAccountValid": False})
