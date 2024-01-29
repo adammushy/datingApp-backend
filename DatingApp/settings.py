@@ -103,16 +103,27 @@ REST_FRAMEWORK = {
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'datingDB',
+    'USER': 'adammushy',
+    'PASSWORD': 's6hVtcaqbN9T',
+    'HOST': 'ep-summer-hall-a64x5rub.us-west-2.aws.neon.tech',
+    'PORT': '5432',
+    'OPTIONS': {'sslmode': 'require'},
+  }
 }
 
-database_url = os.environ.get("DATABASE_URL")
+# database_url = os.environ.get("DATABASE_URL")
 
-DATABASES["default"]= dj_database_url.parse("postgres://datingapp_vw2m_user:SmV1FDPxHJh1IhTHDuShDeGmk8vB6H1L@dpg-cmjra5fqd2ns73bkvgdg-a.oregon-postgres.render.com/datingapp_vw2m")
+# DATABASES["default"]= dj_database_url.parse("postgres://datingapp_vw2m_user:SmV1FDPxHJh1IhTHDuShDeGmk8vB6H1L@dpg-cmjra5fqd2ns73bkvgdg-a.oregon-postgres.render.com/datingapp_vw2m")
 # DATABASES["default"]= dj_database_url.parse(database_url )
 
 # postgres://datingapp_vw2m_user:SmV1FDPxHJh1IhTHDuShDeGmk8vB6H1L@dpg-cmjra5fqd2ns73bkvgdg-a/datingapp_vw2m
